@@ -1,0 +1,48 @@
+<!doctype html>
+
+<head>
+    <title>Pong</title>
+    <link rel="stylesheet" href="pong.css">
+</head>
+
+<body>
+    <audio id="audio">
+</audio>
+    <div id="score">
+        <div id="f_score">First Player 0</div>
+        <div id="line">-</div>
+        <div id="s_score">Second Player 0</div>
+    </div>
+    <div class="game-content">
+        <div id="player-controls">
+            <p>First Board Name</p>
+            <input type="text" id="first-name" value="First Player" maxlength="18">
+            <p>Second Board Name</p>
+            <input type="text" id="second-name" value="Second Player" maxlength="18">
+            <div class="color-picker">First Board Color:&nbsp;
+                <input type="color" id="first-color" value="#22cc00">
+            </div>
+            <div class="color-picker">Second Board Color:&nbsp;
+                <input type="color" id="second-color" value="#ff0000">
+            </div>
+            <div class="color-picker">Ball Color:&nbsp;
+                <input type="color" id="ball-color" value="#00021D">
+            </div>
+        </div>
+        <div id="canvas-block">
+            <canvas id="canvas" width="900" height="600"></canvas>
+        </div>
+        <div id="ball-controls">
+            <p>Board Size</p>
+            <input type="range" id="board-size" min="50" max="300" step="10" value="100"><br />
+            <p>Board Speed</p>
+            <input type="range" id="board-speed" min="1" max="30" step="1" value="12"><br />
+            <p>Ball Radius</p>
+            <input type="range" id="ball-radius" min="5" max="25" step="5" value="10"><br />
+            <p>Ball Velocity</p>
+            <input type="range" id="ball-velocity" min="1" max="20" step="1" value="5"><br /><br />
+            <input type="button" id="play-btn" value="SET VALUES"><br/>
+        </div>
+    </div>
+    <script type="text/javascript" src="pong.js"></script>
+</body>
